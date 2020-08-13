@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CKEditor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.min.css">
+  <style>
+    .container {
+      max-width: 1000px;
+      margin-top: 50px;
+    }
+
+    #cke_1_contents {
+      min-height: 400px !important; 
+    }
+
+    .button-primary {
+      background: #718928 !important;
+      border: 0 !important; 
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h2>Eksempel på tekst editor | Køges Kost Koncept</h2>
+      <textarea name="content">
+        <h1>Martin Hardiman</h1>
+
+<h2>Tr&aelig;ningsnoter</h2>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:900px">
+	<thead>
+		<tr>
+			<th scope="col">Dato</th>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>13/8/2020</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+		</tr>
+		<tr>
+			<td>10/8/2020</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit..</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+		</tr>
+		<tr>
+			<td>7/8/2020</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+		</tr>
+		<tr>
+			<td>3/8/2020</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+			<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>     
+        
+      </textarea>
+
+      <button class="button-primary">GEM</button>
+    </div>
+  </div>
+  <script src="ckeditor/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace('content');
+  </script>
+</body>
+</html>
